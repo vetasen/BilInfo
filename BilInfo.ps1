@@ -1,4 +1,18 @@
-﻿#ERASE ALL THIS AND PUT XAML BELOW between the @" "@
+﻿
+$rawdump = test-path -Path C:\Util\BilInfo\rawdump
+if ($rawdump -eq $false){
+    mkdir C:\util\BilInfo\rawdump
+    }
+
+$carlist = test-path -Path C:\Util\BilInfo\carlist
+if ($carlist -eq $false){
+    mkdir C:\util\Bilinfo\carlist
+    }
+
+
+
+
+
 $inputXML = @"
 <Window x:Class="TestApplikasjon.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
